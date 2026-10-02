@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <!-- Conectando o arquivo de estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        
+        <!-- Input 1 com ID para podermos ler o valor no JS -->
+        <input type="number" id="num1" placeholder="1º número">
+        
+        <!-- Menu com as opções de operação -->
+        <select id="operacao">
+            <option value="+">Somar (+)</option>
+            <option value="-">Subtrair (-)</option>
+            <option value="*">Multiplicar (*)</option>
+            <option value="/">Dividir (/)</option>
+        </select>
+        
+        <!-- Input 2 com ID -->
+        <input type="number" id="num2" placeholder="2º número">
+        
+        <!-- Botão que vai disparar a função no JavaScript ao clicar -->
+        <button onclick="calcular()">Calcular</button>
+        
+        <!-- Área onde o resultado será inserido dinamicamente -->
+        <div id="area-resultado">Resultado: <span>-</span></div>
+    </div>
+
+    <!-- Conectando o arquivo de script (sempre no final do body) -->
+    <script src="script.js"></script>
+</body>
+</html>

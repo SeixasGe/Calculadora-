@@ -1,0 +1,54 @@
+/* Configurações gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+    height: 100vh;           /* Ocupa a altura total da tela */
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* O cartão da calculadora */
+.calculadora {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;                    /* Elementos um embaixo do outro */
+    gap: 15px;                                 /* Espaço entre os elementos */
+    width: 250px;
+    text-align: center;
+}
+
+/* Estilo para inputs, select e botão */
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo específico do botão */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Área do resultado */
+#area-resultado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
